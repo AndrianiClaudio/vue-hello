@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- vue root -->
-    <div id="main-container">
+    <form id="main-container">
         <input 
             :type='input.type'
             :placeholder='input.placeholder'
@@ -22,9 +22,18 @@
         </p>
         <hr>
         <img 
-            :src="image.src"
-            :alt="image.alt">
-    </div>
+            :src="product.image_src"
+            :alt="product.image_alt">
+        <span>
+            Numero prodotti: {{product.product_num}}
+        </span>
+        <button
+            :id='button.id'
+            @click= 'addProduct'
+        >
+            {{button.name}}
+        </button>
+    </form>
     <!-- my script -->
     <script src="js/script.js"></script>
 </body>
