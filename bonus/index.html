@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vue CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Vue Hello - Bonus</title>
+</head>
+<body>
+    <!-- vue root -->
+    <div id="main-container">
+        <input 
+            :type='input.type'
+            :placeholder='input.placeholder'
+            @keyup= 'showText'
+        >
+        <hr>
+        <img 
+            :src="image.src"
+            :alt="image.alt">
+        <p></p>
+    </div>
+    <!-- my script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
