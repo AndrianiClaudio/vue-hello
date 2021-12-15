@@ -14,13 +14,16 @@
         <input 
             :type='input.type'
             :placeholder='input.placeholder'
+            :value = 'input.message'
             @keyup= 'showText'
         >
+        <p>
+            {{input.message}}
+        </p>
         <hr>
         <img 
             :src="image.src"
             :alt="image.alt">
-        <p></p>
     </div>
     <!-- my script -->
     <script src="js/script.js"></script>

@@ -16,7 +16,7 @@ const root = new Vue ({
     },
     methods:{
         showText: function(event) {
-            console.log(event.target.value);
+            this._data.input.message = event.target.value;
         }
     }
 })
