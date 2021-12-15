@@ -13,6 +13,8 @@
     <div id="main-container">
         <!-- h1 con stampa dinamica tramite data -->
         <h1>{{text_message}}</h1>
+        <!-- immagine con src e alt dinamici -->
+        <img v-bind:src="image.src" v-bind:alt="image.alt">
     </div>
     <!-- my script -->
     <script src="js/script.js"></script>
