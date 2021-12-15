@@ -27,7 +27,7 @@ const root = new Vue ({
         },
         addProduct: function(event) {
             event.preventDefault();
-            console.log('click');
+            this._data.product.product_num += 1;
         }
     }
 })
